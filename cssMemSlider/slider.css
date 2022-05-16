@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Georgia Regular';
+    src: url('Georgia.eot');
+    src: url('Georgia.eot?#iefix') format('embedded-opentype'),
+    url('Georgia.woff') format('woff'),
+    url('Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;  
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +15,18 @@
 
 body {
     background-color: aquamarine;
+    margin: 2rem 0;
+}
+header {
+    margin: 0 auto;
+    max-width: 80rem;
+}
+h1 {
+    font-family: 'Georgia Regular';
+    margin: 0;
+    padding: 5%;
+    font-size: 3rem;
+    text-align: center;
 }
 .slider {
     width: 100%;
@@ -73,7 +95,8 @@ input[name="r"] {
     transition: all 2s ease;
     /* align-items: center;    */
 }
-h1 {
+h2 {
+    font-family: 'Georgia Regular';
     margin: 0;
     padding: 5%;
     font-size: 250%;
@@ -120,6 +143,13 @@ h1 {
 #r4:checked ~ .help >.titles > .t1 {
     margin-left:-75%;
 }
+h3 {
+    font-family: 'Georgia Regular';
+    margin: 0;
+    padding: 3%;
+    font-size: 2rem;
+    text-align: center;
+}
 @media screen and (max-width: 768px) {
     .help {
         grid-template-columns: 30% 40% 30%;
@@ -138,10 +168,21 @@ h1 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
     }
-
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
   }
   @media screen and (max-width: 490px) {
+    h2 {
+        font-size: 180%;
+    }
     h1 {
-        font-size: 195%;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
     }
   }
