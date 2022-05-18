@@ -127,6 +127,13 @@ h2 {
     border-radius: 100%;
     transition: all .4s ease;
 }
+.dot:active {
+    background-color: rgb(170, 50, 50);
+}
+#r1:checked ~ .help >.navigation>label[for="r1"]>.dot { background: rgb(170, 50, 50); }
+#r2:checked ~ .help >.navigation>label[for="r2"]>.dot { background: rgb(170, 50, 50); }
+#r3:checked ~ .help >.navigation>label[for="r3"]>.dot { background: rgb(170, 50, 50); }
+#r4:checked ~ .help >.navigation>label[for="r4"]>.dot { background: rgb(170, 50, 50); }
 .bar:hover .dot{
     opacity: .8;
     transform: scale(1.2);
